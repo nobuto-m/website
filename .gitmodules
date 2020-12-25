@@ -1,0 +1,4 @@
+[submodule "_content"]
+	path = _content
+	url = https://github.com/nobuto-m/nobuto-m.github.io.git
+	branch = master
