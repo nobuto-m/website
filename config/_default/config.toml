@@ -43,6 +43,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   publication_types = "/publication-type/:slug/"
 
   post = "post/:year/:slug/"
+  year = "post/:slug/"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON" ]
@@ -78,6 +79,9 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+
+  # for yearly archives of posts
+  year = "year"
 
 # Related content.
 [related]
