@@ -36,6 +36,8 @@ enableRobotsTXT = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 
+ignoreErrors = ["error-output-taxonomy"]
+
 # Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.
 [permalinks]
   tags = "/tag/:slug/"
@@ -48,6 +50,9 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 [outputs]
   home = [ "HTML", "RSS", "JSON" ]
   section = [ "HTML", "RSS" ]
+
+  # suppress unnecessary RSS
+  taxonomy = [ "HTML" ]
 
 [mediaTypes."application/manifest+json"]
   suffixes = ["webmanifest"]
