@@ -21,6 +21,7 @@ copyright = "&copy; 2017-{year} Nobuto Murata"
 ############################
 
 # Get last modified date for content from Git?
+# NOTE: it doesn't work with submodule https://github.com/gohugoio/hugo/issues/5533
 enableGitInfo = true
 
 # Default language to use (if you setup multilingual support)
