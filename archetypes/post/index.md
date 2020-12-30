@@ -1,16 +1,20 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{ humanize .Name }}"
 subtitle: ""
 summary: ""
 authors: []
+
 tags: []
 categories: []
+
+year: {{ dateFormat "2006" .Date }}
 date: {{ .Date }}
 lastmod: {{ .Date }}
+
 featured: false
-draft: false
+draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -18,6 +22,7 @@ draft: false
 image:
   caption: ""
   focal_point: ""
+  # change it to true if it's actually used inside the post
   preview_only: false
 
 # Projects (optional).
