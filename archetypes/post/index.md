@@ -2,6 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "{{ humanize .Name }}"
+slug: {{ .Name }}
 subtitle: ""
 summary: ""
 authors: []
