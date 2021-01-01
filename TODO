@@ -1,0 +1,2 @@
+- disable a keyboard shortcut as "/" to open a search dialogue
+- empty entries in sitemap.xml with `render: never`
