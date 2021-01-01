@@ -23,8 +23,7 @@ draft: true
 image:
   caption: ""
   focal_point: ""
-  # change it to true if it's actually used inside the post
-  preview_only: false
+  preview_only: true
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
