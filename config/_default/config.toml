@@ -115,6 +115,10 @@ ignoreErrors = ["error-output-taxonomy"]
     name = "authors"
     weight = 20.0
 
+[privacy]
+  [privacy.twitter]
+    enableDNT = true
+
 # Install Wowchemy
 [module]
   [[module.imports]]
