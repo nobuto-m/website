@@ -22,3 +22,5 @@ draft: true
 image:
   preview_only: true
 ---
+
+{{< figure src="featured.png" title="" >}}
