@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+shopt -s expand_aliases
+. ~/.bash_aliases || true
+
 # Wowchemy Updater
 # Helps update Hugo modules and the compatible Hugo version for Netlify.
 # https://wowchemy.com/docs/update/
