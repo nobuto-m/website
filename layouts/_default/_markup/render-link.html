@@ -1,6 +1,0 @@
-{{- /*
-    omit target="_blank" from wowchemy's one. there seems no simple
-    switch in goldmark while blackfriday has hrefTargetBlank=true/false
-*/ -}}
-<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
-{{- /* remove newline at end of file */ -}}
