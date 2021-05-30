@@ -1,0 +1,86 @@
+# Configuration of Hugo
+# Guide: https://wowchemy.com/docs/getting-started/
+# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+title: 'Nobuto Murata' # Website name
+baseurl: 'https://nobuto-m.github.io/' # Website URL
+copyright: '&copy; 2017-{year} Nobuto Murata' # Footer text, e.g. '© {year} Me'
+
+############################
+## LANGUAGE
+############################
+
+defaultContentLanguage: en
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+removePathAccents: true
+
+############################
+## MODULES
+############################
+
+module:
+  imports:
+    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy
+
+############################
+## ADVANCED
+############################
+
+# NOTE: it doesn't work with submodule https://github.com/gohugoio/hugo/issues/5533
+enableGitInfo: true
+summaryLength: 30
+paginate: 10
+enableEmoji: true
+enableRobotsTXT: true
+footnotereturnlinkcontents: <sup>^</sup>
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+permalinks:
+  event: '/talk/:slug/'
+  tags: '/tag/:slug/'
+  categories: '/category/:slug/'
+  publication_types: '/publication-type/:slug/'
+  post: 'post/:year/:slug/'
+  year: 'post/:slug/'
+disableAliases: true
+outputs:
+  home: [HTML, RSS, JSON]
+  section: [HTML, RSS]
+  # suppress unnecessary RSS
+  taxonomy: [HTML]
+ignoreErrors: ["error-output-taxonomy"]
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+imaging:
+  resampleFilter: lanczos
+  quality: 75
+  anchor: smart
+timeout: 600000
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  author: authors
+  # for yearly archives of posts
+  year: year
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 70
+privacy:
+  twitter:
+    enableDNT: true
