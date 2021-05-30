@@ -4,6 +4,5 @@
 # Hugo
 /resources/
 public/
-
-# https://gohugo.io/getting-started/configuration/#configure-build
-/assets/jsconfig.json
+jsconfig.json
+node_modules/
