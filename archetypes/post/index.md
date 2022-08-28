@@ -10,6 +10,7 @@ authors: []
 tags: []
 categories: []
 
+reading_time: false
 show_related: true
 
 year: {{ dateFormat "2006" .Date }}
