@@ -10,6 +10,8 @@ authors: []
 tags: []
 categories: []
 
+show_related: true
+
 year: {{ dateFormat "2006" .Date }}
 date: {{ .Date }}
 lastmod: {{ .Date }}

@@ -6,6 +6,6 @@ set -u
 shopt -s expand_aliases
 . ~/.bash_aliases || true
 
-#hugo server --disableFastRender --i18n-warnings
-hugo server --disableFastRender --i18n-warnings \
+#hugo server --disableFastRender
+hugo server --disableFastRender \
     --buildDrafts
