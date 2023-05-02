@@ -45,7 +45,7 @@ permalinks:
   publication_types: '/publication-type/:slug/'
   post: 'post/:year/:slug/'
   year: 'post/:slug/'
-disableAliases: true
+disableAliases: false
 outputs:
   home: [HTML, RSS, JSON]
   section: [HTML, RSS]
