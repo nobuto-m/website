@@ -2,6 +2,8 @@
 /.github/workflows/updater-wip.yml -diff
 /academic.Rproj -diff
 /assets/media/icons/brands/org-*.svg -diff
-/content/** -diff
 /netlify.toml -diff
 /theme.toml -diff
+
+# content is managed in a submodule
+/content/** -diff
