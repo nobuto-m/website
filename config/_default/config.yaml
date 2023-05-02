@@ -30,7 +30,8 @@ module:
 ## ADVANCED
 ############################
 
-# NOTE: it doesn't work with submodule https://github.com/gohugoio/hugo/issues/5533
+# NOTE: it doesn't work with submodule actually
+# https://github.com/gohugoio/hugo/issues/5533
 enableGitInfo: true
 summaryLength: 30
 paginate: 10
@@ -45,12 +46,19 @@ permalinks:
   publication_types: '/publication-type/:slug/'
   post: 'post/:year/:slug/'
   year: 'post/:slug/'
+# rely on a client-side redirection
 disableAliases: false
 outputs:
+  # home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
+  # don't generate webmanifest, Netlify headers and redirects
   home: [HTML, RSS, JSON]
   section: [HTML, RSS]
   # suppress unnecessary RSS
   taxonomy: [HTML]
+# You have configured output formats for 'taxonomy' in your site
+# configuration. In Hugo 0.73.0 we fixed these to be what most people
+# expect (taxonomy and term). But this also means that your site
+# configuration may not do what you expect.
 ignoreErrors: ["error-output-taxonomy"]
 imaging:
   resampleFilter: lanczos

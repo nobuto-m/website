@@ -1,0 +1,7 @@
+# derived from the template on purpose
+/.github/workflows/updater-wip.yml -diff
+/academic.Rproj -diff
+/assets/media/icons/brands/org-*.svg -diff
+/content/** -diff
+/netlify.toml -diff
+/theme.toml -diff
