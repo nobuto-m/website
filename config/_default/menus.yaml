@@ -10,6 +10,13 @@ main:
   - name: Posts
     url: '#posts'
     weight: 20
+  - name: "Language"
+    identifier: lang
+    weight: 25
+  - name: "日本語"
+    parent: lang
+    url: '/ja/post/'
+    weight: 10
 #  - name: Projects
 #    url: '#projects'
 #    weight: 30
