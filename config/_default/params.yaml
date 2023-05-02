@@ -46,9 +46,9 @@ footer:
     notice: '&copy; 2017-{year} Nobuto Murata'
     license:
       enable: false
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      #allow_derivatives: false
+      #share_alike: true
+      #allow_commercial: false
 
 # Localization
 
