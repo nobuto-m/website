@@ -21,7 +21,7 @@ cat > "$path" <<EOF
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: ""
-slug:
+slug: $unixtime
 subtitle: ""
 summary: ""
 authors: []
