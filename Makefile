@@ -6,6 +6,10 @@ build:
 view:
 	./bin/view.sh
 
-.PHONY: new-post
-new-post:
-	./bin/new-post.sh
+.PHONY: new-post-en
+new-post-en:
+	./bin/new-post-en.sh
+
+.PHONY: new-post-ja
+new-post-ja:
+	./bin/new-post-ja.sh
