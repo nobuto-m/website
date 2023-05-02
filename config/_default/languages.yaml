@@ -11,6 +11,14 @@ en:
 ja:
   languageCode: ja
   contentDir: content/ja
+  menu:
+    main:
+      - name: "Home"
+        url: '../'
+        weight: 10
+      - name: "投稿"
+        url: '#posts'
+        weight: 20
 
 # Uncomment the lines below to configure your website in a second language.
 #zh:
