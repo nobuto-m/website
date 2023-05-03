@@ -11,7 +11,9 @@ baseurl: 'https://nobuto-m.github.io/' # Website URL
 ############################
 
 defaultContentLanguage: en
-hasCJKLanguage: true
+# false on purpose to create a summary based on the number of paragraphs
+# instead of characters not to cut a word in the middle
+hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
