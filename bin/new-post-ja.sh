@@ -30,7 +30,8 @@ tags: []
 categories: []
 
 reading_time: false
-show_related: true
+show_related: false
+share: false
 
 year: $year
 date: $date
