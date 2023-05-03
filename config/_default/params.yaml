@@ -21,10 +21,10 @@ marketing:
     description: ''
     twitter: ''
   analytics:
-    google_analytics: 'x-WRee-yVqnJs0JQZzIhmu43FqdyIrIKokjOAFhdL4I'
+    google_analytics: ''
     baidu_tongji: ''
   verification:
-    google: ''
+    google: 'x-WRee-yVqnJs0JQZzIhmu43FqdyIrIKokjOAFhdL4I'
     baidu: ''
 
 # Site header
