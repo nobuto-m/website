@@ -11,6 +11,7 @@ en:
 ja:
   languageCode: ja
   contentDir: content/ja
+  summaryLength: 140
   menu:
     main:
       - name: "Home"
