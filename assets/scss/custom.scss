@@ -2,3 +2,7 @@ pre {
   border-style: solid;
   padding: 0.5rem;
 }
+
+html:lang(ja) > body {
+  font-size: 0.9rem;
+}
