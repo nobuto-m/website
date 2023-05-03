@@ -11,7 +11,7 @@ baseurl: 'https://nobuto-m.github.io/' # Website URL
 ############################
 
 defaultContentLanguage: en
-hasCJKLanguage: false
+hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
