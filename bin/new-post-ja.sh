@@ -28,6 +28,7 @@ authors: []
 
 tags: []
 categories: []
+keywords: []
 
 reading_time: false
 show_related: false
