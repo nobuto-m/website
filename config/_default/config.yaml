@@ -85,6 +85,8 @@ related:
       weight: 100
     - name: categories
       weight: 70
+    - name: keywords
+      weight: 80
 security:
   _merge: deep
 sitemap:
