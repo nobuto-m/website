@@ -26,4 +26,4 @@ image:
   preview_only: true
 ---
 
-{{< figure src="featured.png" title="" >}}
+{{< figure src="featured.png" caption="" >}}
