@@ -15,5 +15,18 @@ hugo --gc --cleanDestinationDir
 # tidy up for a human readable diff instead of `hugo --minify`
 find public/ -name '*.html' \
     -print \
-    -exec xmllint --html \
-        --format --output {} {} \;
+    -exec tidy \
+        -q \
+        --keep-time yes \
+        --tidy-mark no \
+        --clean no \
+        --wrap 0 \
+        --indent auto \
+        --indent-spaces 2 \
+        --vertical-space yes \
+        --drop-empty-elements no \
+        --drop-empty-paras no \
+        --quote-ampersand no \
+        --quote-nbsp no \
+        --warn-proprietary-attributes no \
+        -modify {} \;
