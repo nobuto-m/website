@@ -11,8 +11,10 @@ exiftool -P -All= -overwrite_original -r content/
 
 hugo --gc --cleanDestinationDir
 
-# tidy up for a human readable diff instead of `hugo --minify`
+[ "$#" = 0 ] && exit
+
 if [ "$1" = '--tidy=true' ]; then
+    # tidy up for a human readable diff instead of `hugo --minify`
     find public/ -name '*.html' \
         -exec tidy \
             -q \
