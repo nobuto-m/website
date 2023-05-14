@@ -6,7 +6,7 @@ set -u
 # print files bigger than 1 MB
 find . -path ./.git -prune -o -type f -size +1M -print
 
-# this wipes the Orientation tag too
+# this wipes the Orientation tag too, use exifautotran by hand
 exiftool -P -All= -overwrite_original -r content/
 
 hugo --gc --cleanDestinationDir
