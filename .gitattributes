@@ -1,4 +1,6 @@
 # derived from the template on purpose
+/.github/workflows/import-publications.yml -diff
+/.github/workflows/publish.yaml -diff
 /.github/workflows/updater-wip.yml -diff
 /academic.Rproj -diff
 /assets/media/icons/brands/org-*.svg -diff
