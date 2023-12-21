@@ -4,6 +4,17 @@
      such as Callout, without the HTML being rendered as a Markdown code block. */}}
 
 {{/*
+
+    "exclude PNG from lossy webp compression"
+    https://github.com/HugoBlox/hugo-blox-builder/pull/2943
+
+    $ diff -u \
+        ~/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/\!hugo\!blox/hugo-blox-builder/modules/blox-bootstrap/v*@*\/layouts/shortcodes/figure.html \
+        layouts/shortcodes/figure.html
+
+/*}}
+
+{{/*
     Docs: https://wowchemy.com/docs/content/writing-markdown-latex/#single-image
 
     Parameters
@@ -70,7 +81,6 @@
       {{- if $img -}}
         {{- $isSVG := eq $img.MediaType.SubType "svg" -}}
         {{- $isGIF := eq $img.MediaType.SubType "gif" -}}
-        {{/* https://github.com/wowchemy/wowchemy-hugo-themes/pull/2943 */}}
         {{- $isPNG := eq $img.MediaType.SubType "png" -}}
         {{- if $isSVG | or $isGIF | or $isPNG -}}
           <img alt="{{ $alt }}"
