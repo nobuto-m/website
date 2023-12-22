@@ -6,3 +6,13 @@ pre {
 html:lang(ja) > body {
   font-size: 0.9rem;
 }
+
+html:lang(ja) {
+  h1, h2, h3, h4, h5, h6 {
+    /*
+    Experimental, not supported by Firefox
+    https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#browser_compatibility
+    */
+    word-break: auto-phrase;
+  }
+}
