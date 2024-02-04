@@ -2,11 +2,11 @@
 # Documentation: https://docs.hugoblox.com/hugo-tutorials/page-sharer/
 
 [[buttons]]
-  id = "twitter"
+  id = "x"
   url = "https://twitter.com/intent/tweet?url={url}&text={title}"
-  title = "Twitter"
+  title = "X"
   icon_pack = "fab"
-  icon = "twitter"
+  icon = "x-twitter"
   enable = true
 
 [[buttons]]
