@@ -21,3 +21,7 @@ new-post-en:
 .PHONY: new-post-ja
 new-post-ja:
 	./bin/new-post-ja.sh
+
+.PHONY: install-local-hugo
+install-local-hugo:
+	./bin/install-local-hugo.sh '$(version)'
