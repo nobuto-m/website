@@ -13,6 +13,7 @@ keywords: []
 
 reading_time: false
 show_related: true
+share: true
 
 year: {{ dateFormat "2006" .Date }}
 date: {{ .Date }}

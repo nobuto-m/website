@@ -16,11 +16,11 @@ view:
 
 .PHONY: new-post-en
 new-post-en:
-	./bin/new-post-en.sh
+	./bin/new-post.sh en
 
 .PHONY: new-post-ja
 new-post-ja:
-	./bin/new-post-ja.sh
+	./bin/new-post.sh ja
 
 .PHONY: install-local-hugo
 install-local-hugo:
