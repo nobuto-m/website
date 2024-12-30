@@ -1,6 +1,6 @@
 module my-website
 
-go 1.15
+go 1.23.4
 
 require (
 	github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5 v5.9.7 // indirect
