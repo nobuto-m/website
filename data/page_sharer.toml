@@ -34,6 +34,14 @@
   enable = true
 
 [[buttons]]
+  id = "feedback"
+  url = "https://github.com/nobuto-m/nobuto-m.github.io/issues/new?body=%0A%0A---%0AReported+from:%0A{url}"
+  title = "Feedback"
+  icon_pack = "fas"
+  icon = "exclamation-circle"
+  enable = true
+
+[[buttons]]
   id = "whatsapp"
   url = "whatsapp://send?text={title}%20{url}"
   title = "WhatsApp"
