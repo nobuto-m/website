@@ -24,4 +24,5 @@ new-post-ja:
 
 .PHONY: install-local-hugo
 install-local-hugo:
+	# last tested: 0.126.3
 	./bin/install-local-hugo.sh '$(version)'
